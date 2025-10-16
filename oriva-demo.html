@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oriva — Programme national de santé mentale</title>
+  <meta name="description" content="Oriva — Programme national de santé mentale pour enfants et adolescents (3 à 25 ans)" />
+  <!-- Tailwind via CDN (nécessite une connexion internet lors de l'ouverture du fichier) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Police Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme: light;}
+    html, body {font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;}
+    .pill{display:inline-flex;align-items:center;border-radius:9999px;border:1px solid rgba(15, 23, 42, 0.1);padding:.25rem .625rem;font-size:.75rem;font-weight:600;background:#fff;box-shadow:0 .5px 0 rgba(15,23,42,0.04)}
+    .card{border:1px solid rgba(15,23,42,0.08);border-radius:1rem;background:#fff}
+    .gradient{background:linear-gradient(180deg,#eff6ff, #fff 40%, #fff)}
+    .shadow-soft{box-shadow:0 1px 2px rgba(0,0,0,.05), 0 8px 24px rgba(30, 64, 175, .06)}
+  </style>
+</head>
+<body class="text-slate-900 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 border-b bg-white/80 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-2xl bg-sky-600/10 grid place-items-center">🧠</div>
+        <span class="font-bold text-lg tracking-tight">Oriva</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#objectifs" class="hover:text-sky-700">Objectifs</a>
+        <a href="#tranches" class="hover:text-sky-700">Tranches d’âge</a>
+        <a href="#canaux" class="hover:text-sky-700">Canaux</a>
+        <a href="#acteurs" class="hover:text-sky-700">Acteurs</a>
+        <a href="#suivi" class="hover:text-sky-700">Suivi</a>
+        <a href="#formation" class="hover:text-sky-700">Formation</a>
+        <a href="#evaluation" class="hover:text-sky-700">Évaluation</a>
+      </nav>
+      <a href="#contact" class="pill">Se connecter</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="gradient">
+    <div class="mx-auto max-w-7xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 rounded-full bg-sky-600/10 px-3 py-1 text-xs font-semibold text-sky-700 mb-4">
+          ✅ Programme national — 3 à 25 ans
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">Oriva</h1>
+        <p class="mt-3 text-xl text-slate-700">Programme national de santé mentale pour enfants et adolescents.</p>
+        <p class="mt-4 text-slate-600">Des parcours adaptés à chaque âge, un accompagnement continu, des outils numériques modernes, et une mobilisation commune des écoles, familles et communautés.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#objectifs" class="px-5 py-3 rounded-xl bg-sky-600 text-white font-semibold shadow-soft">Découvrir le programme →</a>
+          <a href="#contact" class="px-5 py-3 rounded-xl border font-semibold">Télécharger la brochure</a>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-3 text-sm">
+          <span class="pill">Écoles</span>
+          <span class="pill">Familles</span>
+          <span class="pill">Communautés</span>
+          <span class="pill">Application nationale</span>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] rounded-3xl border bg-white shadow-soft p-6 grid">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="card p-4">
+              <div class="text-base font-semibold mb-1">📊 Dépistage doux</div>
+              <p class="text-sm text-slate-600">Tests simples, alertes précoces & suivi longitudinal sécurisé.</p>
+            </div>
+            <div class="card p-4">
+              <div class="text-base font-semibold mb-1">🧭 Parcours adapté</div>
+              <p class="text-sm text-slate-600">Actions ciblées selon la tranche d’âge et le contexte.</p>
+            </div>
+            <div class="card p-4">
+              <div class="text-base font-semibold mb-1">📁 Dossier numérique</div>
+              <p class="text-sm text-slate-600">Un “dossier santé mentale” suivi de 3 à 25 ans.</p>
+            </div>
+            <div class="card p-4">
+              <div class="text-base font-semibold mb-1">📅 Sessions régulières</div>
+              <p class="text-sm text-slate-600">Enseignants, parents et pairs formés & impliqués.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objectifs -->
+  <section id="objectifs" class="py-14 md:py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div class="mb-2 text-xs font-semibold tracking-widest uppercase text-slate-500">Finalités</div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Objectifs généraux</h2>
+        <p class="mt-3 text-slate-600 text-base md:text-lg">Un cadre commun pour prévenir, repérer et accompagner chaque enfant.</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-4">
+        <div class="card p-5">
+          <div class="h-10 w-10 rounded-xl bg-sky-600/10 grid place-items-center mb-3">❤️</div>
+          <div class="text-lg font-semibold">Renforcer le bien-être</div>
+          <p class="text-sm text-slate-600 mt-1">Équilibre émotionnel dès le plus jeune âge et dans la durée.</p>
+        </div>
+        <div class="card p-5">
+          <div class="h-10 w-10 rounded-xl bg-sky-600/10 grid place-items-center mb-3">🧠</div>
+          <div class="text-lg font-semibold">Détecter & intervenir tôt</div>
+          <p class="text-sm text-slate-600 mt-1">Dépistages précoces et réponses adaptées à chaque enfant.</p>
+        </div>
+        <div class="card p-5">
+          <div class="h-10 w-10 rounded-xl bg-sky-600/10 grid place-items-center mb-3">🛡️</div>
+          <div class="text-lg font-semibold">Protéger & outiller</div>
+          <p class="text-sm text-slate-600 mt-1">Gérer stress, pression sociale/scolaire et compétences psychosociales.</p>
+        </div>
+        <div class="card p-5">
+          <div class="h-10 w-10 rounded-xl bg-sky-600/10 grid place-items-center mb-3">✨</div>
+          <div class="text-lg font-semibold">Réduire la stigmatisation</div>
+          <p class="text-sm text-slate-600 mt-1">Informer, sensibiliser et normaliser la santé mentale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tranches d'âge -->
+  <section id="tranches" class="py-14 md:py-20 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div class="mb-2 text-xs font-semibold tracking-widest uppercase text-slate-500">Parcours gradués</div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Structure par tranche d’âge</h2>
+        <p class="mt-3 text-slate-600 text-base md:text-lg">Des contenus, actions et outils adaptés du préscolaire aux jeunes adultes.</p>
+      </div>
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
+        <!-- 3-6 -->
+        <div class="card p-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="text-xs uppercase tracking-wider text-slate-500">Petite enfance</div>
+              <div class="text-2xl font-semibold">3–6 ans</div>
+            </div>
+            <span class="pill">Petite enfance</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-600">Développement des émotions, sécurité affective, socialisation.</p>
+          <div class="mt-4">
+            <div class="font-semibold mb-2">Actions principales</div>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li>Ateliers émotionnels (identifier/exprimer)</li>
+              <li>Activités ludiques & créatives</li>
+              <li>Formation des enseignants (psycho infantile)</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <div class="font-semibold mb-2">Outils</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="pill">Livrets illustrés</span>
+              <span class="pill">Jeux éducatifs</span>
+              <span class="pill">Apps simples</span>
+            </div>
+          </div>
+        </div>
+        <!-- 7-12 -->
+        <div class="card p-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="text-xs uppercase tracking-wider text-slate-500">Enfance</div>
+              <div class="text-2xl font-semibold">7–12 ans</div>
+            </div>
+            <span class="pill">Enfance</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-600">Résilience, gestion des conflits, prévention du harcèlement.</p>
+          <div class="mt-4">
+            <div class="font-semibold mb-2">Actions principales</div>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li>Cours hebdos (gestion des émotions)</li>
+              <li>Groupes de parole & mentorat par pairs</li>
+              <li>Détection précoce anxiété/dépression</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <div class="font-semibold mb-2">Outils</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="pill">Plateforme de suivi</span>
+              <span class="pill">Auto-évaluation guidée</span>
+              <span class="pill">Ateliers interactifs</span>
+            </div>
+          </div>
+        </div>
+        <!-- 13-18 -->
+        <div class="card p-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="text-xs uppercase tracking-wider text-slate-500">Adolescence</div>
+              <div class="text-2xl font-semibold">13–18 ans</div>
+            </div>
+            <span class="pill">Adolescence</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-600">Stress, estime de soi, prévention addictions & isolement.</p>
+          <div class="mt-4">
+            <div class="font-semibold mb-2">Actions principales</div>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li>Mindfulness & relaxation</li>
+              <li>Mentorat & coaching émotionnel</li>
+              <li>Accès à des psychologues (école/ligne)</li>
+              <li>Cyber-sécurité & sensibilisation</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <div class="font-semibold mb-2">Outils</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="pill">Apps d’accompagnement</span>
+              <span class="pill">Forums modérés</span>
+              <span class="pill">Journaux de bord</span>
+            </div>
+          </div>
+        </div>
+        <!-- 18-25 -->
+        <div class="card p-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="text-xs uppercase tracking-wider text-slate-500">Jeunes adultes</div>
+              <div class="text-2xl font-semibold">18–25 ans</div>
+            </div>
+            <span class="pill">Jeunes adultes</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-600">Autonomie émotionnelle, insertion sociale & pro.</p>
+          <div class="mt-4">
+            <div class="font-semibold mb-2">Actions principales</div>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li>Gestion du stress pro & relationnel</li>
+              <li>Groupes de soutien (transitions)</li>
+              <li>Accès facilité aux consultations</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <div class="font-semibold mb-2">Outils</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="pill">Plateformes en ligne</span>
+              <span class="pill">Webinaires</span>
+              <span class="pill">Réseau de coachs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Canaux -->
+  <section id="canaux" class="py-14 md:py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div class="mb-2 text-xs font-semibold tracking-widest uppercase text-slate-500">Où agir ?</div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Canaux d’intervention</h2>
+        <p class="mt-3 text-slate-600 text-base md:text-lg">Un maillage coordonné entre institutions, familles et territoires.</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-5">
+        <div class="card p-5">
+          <div class="text-lg font-semibold">🏫 Écoles & collèges</div>
+          <p class="text-sm text-slate-600 mt-1">Programmes intégrés, activités extra-scolaires, formations.</p>
+        </div>
+        <div class="card p-5">
+          <div class="text-lg font-semibold">👨‍👩‍👧 Familles</div>
+          <p class="text-sm text-slate-600 mt-1">Guides et ateliers parentaux pour soutenir le développement émotionnel.</p>
+        </div>
+        <div class="card p-5">
+          <div class="text-lg font-semibold">🤝 Communautés locales</div>
+          <p class="text-sm text-slate-600 mt-1">Centres culturels, bibliothèques, clubs sportifs et activités de bien-être.</p>
+        </div>
+        <div class="card p-5">
+          <div class="text-lg font-semibold">📱 Outils numériques</div>
+          <p class="text-sm text-slate-600 mt-1">Application nationale : suivi, tests, ressources, notifications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acteurs -->
+  <section id="acteurs" class="py-14 md:py-20 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div class="mb-2 text-xs font-semibold tracking-widest uppercase text-slate-500">Écosystème</div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Acteurs impliqués</h2>
+        <p class="mt-3 text-slate-600 text-base md:text-lg">Un réseau pluridisciplinaire au service du développement émotionnel.</p>
+      </div>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <span class="pill">Enseignants formés</span>
+        <span class="pill">Psychologues scolaires & pédiatres</span>
+        <span class="pill">Éducateurs spécialisés</span>
+        <span class="pill">Développeurs & animateurs numériques</span>
+        <span class="pill">Mentors/volontaires (pairs)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Suivi -->
+  <section id="suivi" class="py-14 md:py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div class="mb-2 text-xs font-semibold tracking-widest uppercase text-slate-500">Repérage continu</div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Détection et suivi</h2>
+        <p class="mt-3 text-slate-600 text-base md:text-lg">Bilans réguliers, alertes précoces, et accompagnement dans la durée.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="card p-5">
+          <div class="text-lg font-semibold">📈 Bilans réguliers</div>
+          <p class="text-sm text-slate-600 mt-1">Anxiété, stress, estime de soi — tests adaptés à chaque âge.</p>
+        </div>
+        <div class="card p-5">
+          <div class="text-lg font-semibold">🚨 Alertes précoces</div>
+          <p class="text-sm text-slate-600 mt-1">Signalements confidentiels aux psychologues en cas de signes.</p>
+        </div>
+        <div class="card p-5">
+          <div class="text-lg font-semibold">🗂️ Suivi longitudinal</div>
+          <p class="text-sm text-slate-600 mt-1">Dossier numérique de 3 à 25 ans, sécurisé et partagé.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formation -->
+  <section id="formation" class="py-14 md:py-20 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div class="mb-2 text-xs font-semibold tracking-widest uppercase text-slate-500">Compétences & culture</div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Formation et sensibilisation</h2>
+        <p class="mt-3 text-slate-600 text-base md:text-lg">Professionnels, parents et jeunes : chacun a son rôle.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="card p-5">
+          <div class="text-lg font-semibold">🏫 Enseignants & encadrants</div>
+          <p class="text-sm text-slate-600 mt-1">Formation obligatoire : repérage, premiers secours psychologiques, posture et outils.</p>
+        </div>
+        <div class="card p-5">
+          <div class="text-lg font-semibold">👪 Parents & campagnes</div>
+          <p class="text-sm text-slate-600 mt-1">Sessions régulières pour parents et campagnes nationales de sensibilisation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Évaluation -->
+  <section id="evaluation" class="py-14 md:py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div class="mb-2 text-xs font-semibold tracking-widest uppercase text-slate-500">Pilotage & impact</div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Évaluation et indicateurs</h2>
+        <p class="mt-3 text-slate-600 text-base md:text-lg">Des mesures claires pour améliorer en continu le programme.</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-5">
+        <div class="card p-5"><div class="text-lg font-semibold">📋 Bien-être émotionnel annuel</div><p class="text-sm text-slate-600 mt-1">Questionnaires anonymes par établissement/territoire.</p></div>
+        <div class="card p-5"><div class="text-lg font-semibold">🔍 Détection précoce</div><p class="text-sm text-slate-600 mt-1">Taux de repérage des troubles par tranche d'âge.</p></div>
+        <div class="card p-5"><div class="text-lg font-semibold">🙂 Satisfaction</div><p class="text-sm text-slate-600 mt-1">Retours réguliers des familles & enseignants.</p></div>
+        <div class="card p-5"><div class="text-lg font-semibold">⬇️ Réduction des cas</div><p class="text-sm text-slate-600 mt-1">Harcèlement & absentéisme liés aux difficultés.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-12">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="rounded-3xl border bg-white p-8 shadow-soft grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h3 class="text-2xl font-bold">Prêt·e à déployer Oriva ?</h3>
+          <p class="mt-2 text-slate-600">Contactez-nous pour une démo de l’application nationale et des kits pédagogiques.</p>
+        </div>
+        <form class="grid grid-cols-1 sm:grid-cols-3 gap-3" onsubmit="event.preventDefault(); alert('Merci ! Nous vous recontactons très vite.');">
+          <input placeholder="Nom & organisme" class="rounded-xl border px-3 py-3" required />
+          <input placeholder="E-mail professionnel" type="email" class="rounded-xl border px-3 py-3" required />
+          <button class="rounded-xl bg-sky-600 text-white font-semibold px-4 py-3">Demander une démo</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-2xl bg-sky-600/10 grid place-items-center">🧠</div>
+        <span class="font-semibold">Oriva</span>
+        <span class="text-slate-400">• Programme national de santé mentale</span>
+      </div>
+      <div class="text-xs text-slate-500">
+        © <span id="year"></span> Oriva — Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
